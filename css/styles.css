@@ -1,0 +1,129 @@
+	
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(241, 241, 241);
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: 'Montserrat', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.menu{
+	padding: 0;
+	margin-bottom: 40px;
+}
+.menu .navbar{
+	margin-bottom: 0;
+}
+.menu .upper_menu{
+	border: 0;
+}
+.menu .upper_menu .navbar-collapse{
+	padding: 0;
+	background-color: #fff;
+	border: 1px solid rgb(207, 207, 207);
+	border-top: none;
+	text-align: center;
+} 
+.menu .navbar-nav>li>a{
+	font-size: 15px;
+	color: rgb(43, 43, 160);
+	padding: 15px 17px;
+	cursor: pointer;
+}
+.menu .navbar-nav {
+	float: left;
+}
+
+.menu .navbar-nav>li{
+	border-left: 1px solid rgb(207, 207, 207);
+	float: none;
+	display: inline-block;
+}
+.menu .navbar-nav>li.primero{
+	border-left: none;
+}
+.dropdown-menu>li>a {
+	text-align: left;
+	color: rgb(43, 43, 160);
+}
+
+.container{
+	background-color: #fff;
+	box-shadow: 1px 1px 1px rgba(50,50,50,0.09);
+}
+.container .wrapper{
+	padding: 15px;
+}
+.deportista h4{
+	margin-bottom: 20px;
+}
+.deportista form input{
+	margin-bottom: 15px;
+}
+select{
+	background-color: rgb(241, 241, 241);
+}
+.deportista form select{
+	margin-bottom: 15px;
+}
+.pull-right {
+	height: 40px;
+}
+.cerrar_sesion{
+	background-color: rgb(59, 103, 179);
+	color: #fff;
+	display: inline-block;
+	padding: 15px;
+}
+.cerrar_sesion:hover{
+	color: #fff;
+	text-decoration: none;
+	background-color: #77b8ce;
+}
+.deportista .btn.enviar{
+	background-color: rgb(197, 197, 197);
+	color: black;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	float: none;
+	padding: 15px 20px;
+	margin-left: 254px;
+}
+.deportista .btn.enviar:hover{
+	background-color: rgb(210, 210, 210);
+}
+#listaDeportistas, #listaPruebas{
+	height: 275px;
+	width: 360px;
+}
+#listaDeportistasR{
+	text-align: center;	
+	margin-bottom: 30px;
+}
+#listaDeportistasR #listaDeportistas{
+	height: 236px;
+}
+
+#listaDeportistasR h5{
+	text-align: center;
+	font-size: 24px;
+}
+#listaPruebasRelevos{
+	height: 275px;
+	width: 442px;
+}
+.deportista .btn.enviar.registrar_deportista{
+	float: right;
+	margin-left: 0px;
+}
+.deportista .btn.enviar.registrar_inscripcion_relevo, .deportista .btn.enviar.eliminar_inscripcion_relevo{
+	float: none;
+	margin-right: 0;
+	margin-left: 334px;
+}
+ #listaDeportistasR  .editar_deportista #listaDeportistas{
+	height: 32px;
+}
