@@ -3,11 +3,11 @@
 	class DataBase{
 	
 		private $servidor = 'localhost';		
-		private $dbName = 'natacion';
+		private $dbName = 'requerimientos';
 		//private $dbName = 'clubtibu_app';
 		private $user = 'root';
 		//private $user = 'clubtibu_user';		
-		private $password = 'john123';
+		private $password = '';
 		//private $password = 'clubtibu3juh4yg4';
 		//private $user = 'clubtibu_user';			
 		//private $password = 'clubtibu3juh4yg4';

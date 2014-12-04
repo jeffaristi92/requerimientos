@@ -4,7 +4,7 @@
     if(@$_SESSION['acceso'] == 1){
 
       echo "<script type='text/javascript' language='javascript'>
-            location.href='view/inscripcionIndividual.php';          
+            location.href='view/proyecto.php';          
           </script>"; 
     }
 ?>

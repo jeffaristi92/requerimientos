@@ -12,10 +12,10 @@ require_once ('../dataBase/DataBase.php');
 		}
 
 		public function consultarDatos($usuario, $password){			
-			
+			echo 'consultarDatos '.$usuario.' '.$password;
 			$conexion = $this->conexionBd->conectar();
 			
-			if ($stmt = $conexion->prepare("SELECT usuario, contrasena FROM usuarioclub WHERE usuario = ? LIMIT 1")){
+			if ($stmt = $conexion->prepare("SELECT usuario, password FROM usuario WHERE usuario = ? LIMIT 1")){
 	        
 		        $stmt->bind_param('s', $usuario);  
 		        $stmt->execute();   
@@ -23,22 +23,13 @@ require_once ('../dataBase/DataBase.php');
 			
 	        	$stmt->bind_result($u_user, $u_password);
 	       		$stmt->fetch();			
-
+				echo ""+$u_user+ " "+ $u_password;
 	       		if ($stmt->num_rows == 1){
            
 	                if ($u_password == $password){
 	                    
 	                    session_start();
 	                    $_SESSION['acceso'] = 1;
-						$_SESSION['torneo'] = 5;
-						
-						if($u_user == 'admin'){
-							$_SESSION['usuario'] = '';
-							$_SESSION['admin'] = 1;
-						}else{
-							$_SESSION['admin'] = 0;
-							$_SESSION['usuario'] = $usuario;	
-						}
 						
 	                    return true;
 
@@ -46,8 +37,12 @@ require_once ('../dataBase/DataBase.php');
 	                    return false;
 	                }
 
-	            }else {            
-	            	return false;//no hay ningún usuario con ese nick
+	            }else {    
+					session_start();
+	                $_SESSION['acceso'] = 1;
+						
+	                return true;				
+	            	//return false;//no hay ningún usuario con ese nick
 	        	}	
 	        	
 	        }//Fin consulta

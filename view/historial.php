@@ -1,53 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Historial</title>
-	<link rel="stylesheet" href="css/estilo.css" type="text/css" />
-	<meta charset="utf-8">
-</head>
-<body>
-<div id="contenedor">
-	<div id="cuerpo">
-	<div id="navegacion">
-		<ul>
-			<li><img src="imagenes/logo_sigo.png"/></li>
-			<li><a href="index.html">Requerimientos</a></li>	
-			<li><a>Historial</a></li>
-			<li><a href="verificaciones.html">Verificaciones</a></li>
-		</ul>
-	</div>
-	
-	<table>
-		<tr>
-			<td class="label">Fecha</td>
-			<td class="label">Descripción del Cambio a Realizar</td>
-			<td class="label">Mapa CLIENTE - TIPO DOC</td>
-			<td class="label">Campo entrada</td>
-			<td class="label">Campo salida</td>
-			<td class="label">Ejemplo Actual del Campo</td>
-			<td class="label">Ejemplo Final del Campo</td>
-			<td class="label">Tipo de Cambio</td>
-			<td class="label">Responsable</td>
-			<td class="label">Estado</td>
-		</tr>
-		<tr class="even">
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>
-			Nuevo Requerimiento del Cliente<br>
-			Error en el Levantamiento de Informacion<br>
-			Error en el desarrollo<br>
-			</td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+<?php include 'encabezado.php' ?>
+<?php include 'menu.php' ?>
+
+<div class="container deportista">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-4">
+				<br>
+				<br>
+				<h4>Seleccionar proyecto:</h4>
+				<select id="sexo" class="form-control">
+					<option value="si">Varon</option>
+					<option value="no">Dama</option>
+				</select>
+				<br>
+				<br>
+			</div>
+		</div>
+		
+		<div class="wrapper">
+		<h2>Historial de cambios</h2>
+		<br>
+			<div class="col-md-12">	
+				<table>
+					<tr>
+						<td >Fecha</td>
+						<td >Descripción del Cambio a Realizar</td>
+						<td >Mapa CLIENTE - TIPO DOC</td>
+						<td >Campo entrada</td>
+						<td >Campo salida</td>
+						<td >Ejemplo Actual del Campo</td>
+						<td >Ejemplo Final del Campo</td>
+						<td >Tipo de Cambio</td>
+						<td >Responsable</td>
+						<td >Estado</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
-</body>
-</html>
+<?php include 'pie.php' ?>
